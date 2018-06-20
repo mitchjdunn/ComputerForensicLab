@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 
 
 \begin{document}
@@ -18,7 +19,6 @@
 \section{Laboratory Design}
 
 \paragraph{} According to the NISTIR ``Forensic Science Laboratories: Handbook for Facility Planning, Design, Construction, and Relocation", a lab needs to be 700 to 1000 square feet per staff member.The square footage per staff member approaches the low number of that threshold as the number of employees increases because shared spaces, such as reception areas and server rooms don't need to grow at the same rate as the number of employees.  With an estimated 8 staff members, this lab will require an approximate space of 6400 square feet to achieve the working goal of 800 service requests per year.
-
 \subsubsection{Staff Breakdown}
 \paragraph {Management - 1} 
 \paragraph{} The Laboratory Manager is responsible for the well being of the lab.  The manager must have general knowledge of law, computer forensics, and business to actively excel at their job.  The manager determines how the lab will operate by creating policies for all of the staff to follow to provide an efficient and ethical workplace.  which service requests will be fulfilled, will attempt to gain accreditations from ASCLD/LAB, and other administrative work.  
@@ -33,7 +33,14 @@ TODO
 
 
 \section{Hardware}
-This is where Hardware will be listed with a description of why it is needed.
+\subsection{Employee Laptops} 
+\subsection{Tools for Employees} 
+\subsection{Server Rack}
+\subsubsection{Power Supply} The power supply to the server rack should be through an uninterruptible power supply (UPS) in order to ensure that the power supplied is clean and backed up by a battery. The UPS should have enough capacity to run for the time it takes to start a diesel generator to take over as the power supply. The diesel generator should have monthly testing, as well as the power supply failover operation. Each system in the rack should have two power supplies to help guarantee uptime. Each leg of the system should be plugged into a different rack mounted power supply to allow a power supply failure. 
+\subsubsection{Networking} The networking would be simple, one 48 port switch would be sufficient for the entire network. And the connection to the ISP would be connected to a Router/Firewall box. The connection to the ISP should be fiber and have an uplink of at least 500Mbps to ensure that employees can connect remotely and download large files without saturating the link for a long time. A second connection to a different ISP should be considered, to be used as a failover in case of maintenance to the first ISP. To improve security further on the ISP link a Network Detection and Response, such as RSA's NetWitness system would be running on the internal virtual machine cluster described below. Each virtual machine would need three uplinks, one to the employee local area network, one to the Storage area network, and one link for VMWare. 
+\subsubsection{Virtual Machine Cluster} The purpose of the virtual machine cluster is to provide investigators with multiple computers in the most convenient way possible. Since investigators should have access to any operating system they could would need at any time instantly, it is expected that each investigator will have three to five virtual machines at any time. In addition to investigators the IT staff might also want to run some virtual machines for their convenience. This cluster will also provide infrastructure for internal and external services. Internal services would include Active Directory, samba/NFS/FTP sites, etc. Active Directory would be the central authentication for all the services. The cluster would be at least four Dell R630s or an equivalent from another company. If the capacity allows it VMWare's high availability features can be leveraged to run multiple copies of the same virtual machine for critical infrastructure like the Windows Domain Controller in order to ensure that even if a physical host powers off unexpectedly the domain controller would continue to operate and employees are not interrupted. 
+% graphics cards 
+
 
 \section{Software}
 Software required for the lab to act as a function Forensic Lab.
