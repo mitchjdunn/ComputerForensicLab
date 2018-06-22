@@ -9,6 +9,14 @@
 \usepackage[english]{babel}
 \usepackage[style=ieee,backend=biber]{biblatex}
 \addbibresource{lab.bib}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 \begin{document}
 
@@ -63,7 +71,7 @@ The desks have privacy walls so employees can work in peace, but the desks are i
 Each desk will hold the staff members workstation and will also have a dedicated power supply to keep workflow alive and to prevent the loss of sensitive data in the rare case of a power outage. 
 An IP phone will complete each desk so staff members can conduct business with people outside of the office.
 Under each desk is a small opening to a trough for cable management.
-This room contains the only entrance into the rest of the lab, meaning the main door needs to have some robust security
+This room contains the only entrance into the rest of the lab, meaning the main door needs to have some robust security.
 The door will be a double wide door made out of 18-gauge steel.
 The lock on the door will be controlled by an RFID badge and key code entry.
 \subsection{Conference Room}
@@ -83,7 +91,7 @@ The door into the server room will have the same RFID badge and key code lock as
 The server is a critical part of the lab, as it is controls all of the data traffic coming to and from the lab.
 To ensure the safety of the server, this room has its own air supply unit and control to keep it at a temperature and humidity level that is safe for the hardware.
 The room will have antistatic epoxy flooring, and the handlers are instructed to wear antistatic wristbands connected to the case of the server rack to protect the internals from electrical damage.
-To keep the server runner and have a redundant power supply, there will two mounted within the server rack.
+To keep the server running and have a redundant power supply, there will two mounted within the server rack.
 \paragraph{}
 To connect the rest of the lab to the network, there are subfloor troughs running below the floor.
 This trough is designed with security in mind.
@@ -94,7 +102,7 @@ Security cameras will record the room and a log of RFID entrances will prevent t
 \paragraph{}
 Forensic investigators often need to disassemble hardware and copy disk drives to gather the evidence needed for the investigation.
 The workbench will act as an area for the investigators to work on the physical devices.
-In the area around the workbench there are locked cabinets to house the tools and equipment needed to work on varying devices.
+In the area around the workbench, there are locked cabinets to house the tools and equipment needed to work on various devices.
 The investigators have an open desk to place and disassemble the hardware, documenting each step of the way.
 A trough underneath the bench supplies a connections to the network to enable the investigator to work on their workstation while at the bench.
 Lab policy enforces the investigators properly document the process they take to keep chain of custody intact, store the evidence in a secure place, and to return hardware in the same status is was received.
@@ -107,11 +115,11 @@ The workbench is locked with an RFID badge and key code lock that can limit acce
 \paragraph{}
 Proper evidence handling and storage is one of the policies that is needed to get an ACLD/LAB accreditation.
 Evidence is placed in heat sealed antistatic bags, to prevent tampering and electrostatic discharge.
-Properly bagged and labeled electronics are then stored in a 16 gauge steel, anti pick locker.
+Properly bagged and labeled electronics are then stored in a 16 gauge steel, anti-pick locker.
 These lockers are caged in a floor to ceiling fence in the same room as the workbench.  
 To access the lockers, a person needs to access the building, the work bench room, and finally into the fenced in area which is locked with the RFID reader and key code.
 Storage for lab equipment is stored in the same fashion, but partitioned in a separate cage from the evidence.
-This area is also recorded on a CCTV (closed circuit television) camera. 
+This area is also recorded by closed circuit television (CCTV) cameras. 
 
 \subsection{Figures}
 \begin{figure}[H]
@@ -163,11 +171,19 @@ These docks could connect to multiple high resolution screens. As well as a keyb
 \paragraph{}
 Employees would have several tools available to them to use in their investigations.
 These devices would be stored in the cabinets at the workspace next to the evidence locker.
-subsubsection
 \subsubsection{Hard Drive Write Blockers}
 \paragraph{}
 Write blockers would be needed for all of the storage devices that an investigator would encounter.
-This would be all kind of hard drive formats; IDE, SCSI, SATA, USB, eSATA, SD Cards of all sizes, etc.
+This would be all kind of hard drive formats;
+\begin{itemize}
+\item IDE
+\item SCSI
+\item SATA
+\item USB
+\item eSATA
+\item SD Cards of all sizes
+\item etc.
+\end{itemize}
 \subsubsection{Tools for mobile forensics}
 \paragraph{}
 In order to gather information about mobile phones. For example, a SIM card reader would be useful to have.
@@ -175,13 +191,15 @@ In order to gather information about mobile phones. For example, a SIM card read
 \paragraph{}
 A constant supply of clean hard drives for use by investigators to acquire and clone data from hard drives involved in a case.
 Various storage sizes would be available to clone any specific sized hard drive.
+\cite[p.~128]{hayes}
 \subsubsection{Hard Drive Cloning Devices}
 \paragraph{}
 Hardware specifically made to clone hard drives will speed up the process of cloning a hard drive and poses less risk to accidentally changing or losing data.
 \subsubsection{Reference Materials}
 \paragraph{}
 A handy location in a cabinet or bookshelf for reference material like text books, binders of academic papers and articles, training material, etc.
-These reference materials would be useful for investigators to remember how to perform specific tasks they need to do.
+These reference materials would be useful for investigators to reacquaint themselves with how to perform specific tasks they need to do.
+\cite[p.~124]{hayes}
 \subsubsection{Computer Toolkit}
 \paragraph{}
 The computer toolkit would include all the tools needed to dissect a computer or other digital devices.
@@ -189,30 +207,33 @@ The toolkit would include things like various screwdrivers with different heads 
 Small screwdrivers for getting into laptops and other small digital appliances. 
 Pliers, wire cutters, wire strippers and other tools would be included for working with cables. 
 Wrenches and nut drivers would be essential for opening desktop computer cases and larger digital appliances. 
+\cite[p.~129]{hayes}
 \subsubsection{Flashlights}
 \paragraph{}
 Flashlights are useful for areas with bad lighting where it is hard to see without bringing your own light. 
 \subsubsection{Digital Cameras}
 \paragraph{}
 Digital Cameras are an essential part of any criminal investigation.
-\cite[p.~122]{hayes}
 They are used to document crime scenes, exactly how they are before the investigation starts. 
 The cameras will be immensely useful for documenting the location of all the digital devices that the forensic laboratory is going to seize. 
+\cite[p.~129]{hayes}
 \paragraph{}
 Additionally the cameras are helpful for recording exactly how devices are configured, any drives that are in computers, how the hardware in the computer is installed, any flash drives that are installed to the computer.
 Photos of serial numbers or service numbers on devices make recording them quick and easy task for an investigator, allowing them to start their forensic work even faster. 
 Replacement batteries would be stored with the cameras to ensure that there is always enough battery for the investigators to collect all the information necessary for the investigation.
+\cite[p.~129]{hayes}
 \subsubsection{Evidence Bags}
 \paragraph{}
 Evidence bags would be used for collecting any evidence that is taken from the crime scene.
 These bags would be antistatic in order to facilitate use with any digital devices with no worry of static electricity causing damage. 
 The bags would have the necessary labels on the outside in order to maintain chain of custody with proper documentation. 
 The bags would be optionally heat sealed for longer term storage to guarantee that they are tamper free. 
+\cite[p.~130]{hayes}
 \subsubsection{Evidence Labels and Tape}
 \paragraph{}
 Labels for hard drive and tape for wrapping computers are used to ensure that no tampering with evidence occurs in storage. 
 The tape around computers does not allow access to the computer without obvious damage to the tape. 
-
+\cite[p.~130]{hayes}
 \subsection{Server Rack}
 \subsubsection{Power Supply}
 \paragraph{}
@@ -293,16 +314,37 @@ A lot of the software that investigators will have access to their own suite of 
 VMWare fusion would allow employees to connect to different virtual machines easily.
 The software would allow seamless integration with the employees mouse and keyboard. 
 Features like shared clipboard and being able to drag and drop files between the host and guest.
-\subsection{Hard drive analysis tools}
+\subsection{Hardware Analysis Tools}
 \paragraph{}
-The laboratory would provide a suite of hard drive analysis tools in order to help investigators examine any kind of drive they encounter. Some of the software that investigators would need to examine hard drives are listed below:\cite[p.~132]{hayes}
+The laboratory would provide a suite of hard drive analysis tools in order to help investigators examine any kind of drive they encounter. Some of the software that investigators would need to examine hard drives are listed below:
+\cite[p.~132]{hayes}
 \begin{itemize}
 \item ILook
 \item DriveSpy
 \item X-Ways Forensics
 \item WinHex
 \item FTK
+\item EnCase
+\item Mac Marcshal
+\item BlackLight
 \end{itemize}
+\subsection{Antivirus}
+\paragraph{}
+The laboratory would provide every employee antivirus software in order ensure that the network stays secure from attackers.
+Antivirus software is crucial to maintaining a secure network. 
+In addition to the antivirus software there will also be management software to administrate the laptops to make sure they are complaint with any policies that are put in place.
+\subsection{Password Cracking Software}
+\paragraph{}
+Employees would be provided password cracking software software in order to break into any devices that they may need to.
+Investigators would be able to utilize this software in order to break firmware passwords or password protected files.
+Password cracking software is best used on the server cluster to utilize both the full size graphics cards that they feature, as well as the always-on nature of the servers. 
+\cite[p.~138]{hayes}
+\subsection{Photo Analytics}
+\paragraph{}
+Forensic investigations often involve looking at photographs and digging through digital images for evidence. 
+The laboratory would provide sever software applications in order to complete any task involving images.
+Investigators would need software to collect and sift through the metadata of all the images they find in any kind of format they happen to be in.  
+
 
 \section{Accreditation}
 \paragraph{} 
@@ -336,10 +378,13 @@ This includes naming convention, documentation protocol, and storing procedures.
 It is the managers main goal to ensure the evidence attained is forensically sound.
 \subsection{Employee Training and Equipment} 
 \paragraph{} 
-Computer Forensics encapsulates a lot of advanced principles that require the right knowledge base and equipment     to complete \cite{website}. 
-It is the manager's job to hire knowledgable forensic investigators with enough knowledge to cover the responsibi    lites of the lab. 
-Training the staff to keep them up to date on protocols, investigative techniques, and updated accreditation stan    dards is a priority of the manager.
-\newpage
-\printbibliography
+Computer Forensics encapsulates a lot of advanced principles that require the right knowledge base and equipment to complete \cite{website}. 
+It is the manager's job to hire knowledgable forensic investigators with enough knowledge to cover the responsibilities of the lab. 
+Training the staff to keep them up to date on protocols, investigative techniques, and updated accreditation standards is a priority of the manager.
+% \newpage \addcontentsline{toc}{section}{References} \printbibliography
+\newpage \section{References} \printbibliography[heading=none]
 
+\newpage \begin{center} This page intentionally left blank. \end{center}
+\newpage \begin{center} This page intentionally left blank. \end{center}
+\newpage \begin{center} This page intentionally left blank. \end{center}
 \end{document}
