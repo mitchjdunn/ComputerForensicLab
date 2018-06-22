@@ -35,14 +35,16 @@ These policies will not only improve the efficiency of the lab, but will also im
 \paragraph{} The Lawyer will act as a consult for the Computer Forensics staff to ensure all evidence is extracted legally and to verify the evidence is usable.
 
 \paragraph{IT Specialist - 2}
-\paragraph{} The IT Specialists will focus on the internal network and security of the lab.
+\paragraph{}
+The IT Specialists will focus on the internal network and security of the lab.
 The IT Specialist should have 5 years experience as a system administrator, and be well versed in security.
 The IT Specialists will be in charge of securing the hardware and evidence and managing access to the network hardware.
 They should follow ACLD/LAB policies for lab and equipment security.
 The IT Specialist will also act as a system administrator managing users, limiting communication between VLANs, hosting evidence to be easily accessed by authorized personnel, and maintaining the network for the Laboratory.
 
 \paragraph{Computer Forensic Investigator - 5}
-\paragraph{}  A computer forensic investigator should have the skills needed to extract evidence from a device in a non damaging and legal way.
+\paragraph{}
+A computer forensic investigator should have the skills needed to extract evidence from a device in a non damaging and legal way.
 It is important that the team of investigators are experienced in varying devices to enable the lab to accept a wide range of service requests.
 Evidence and other information can be from from any electronic device, ranging from laptop and computers to mobile phones and game consoles.
 All of these devices have their own operating system, meaning the investigator needs know how to work with multiple operating systems and software.
@@ -52,7 +54,7 @@ All of these devices have their own operating system, meaning the investigator n
 The desks have privacy walls so employees can work in peace, but the desks are in the same room to allow for cooperation.  
 Each desk will hold the staff members workstation and will also have a dedicated power supply to keep workflow alive and to prevent the loss of sensitive data in the rare case of a power outage. 
 
-INSERT INFO ABOUT WORKSTATION HERE
+% INSERT INFO ABOUT WORKSTATION HERE
 
 An IP phone will complete each desk so staff members can conduct business with people outside of the office.
 Under each desk is a small opening to a trough for cable management.
@@ -104,18 +106,101 @@ Storage for lab equipment is stored in the same fashion, but partitioned in a se
 
 
 \subsection{Figures}
-\includepdf[pages=-, angle=180]{layout-thx-nick-millet.pdf}
-\section{Hardware}
+\begin{figure}[h!t]
+   \centering
+       \includegraphics[page=1,angle=180,width=.8\textwidth]{layout-thx-nick-millet.pdf}
+ \caption{Layout of the Laboratory}
+ \label{fig:Layout}
+\end{figure}\section{Hardware}
 \subsection{Employee Laptops} 
+\paragraph{}
+All employees would receive Macbook Pros in order complete their daily tasks.
+They would be provided thunderbolt docks in order to connect peripherals at their desk.
+Which would allow them to use external displays, connect to the network with a cable, and setup mice and keyboards.
+The 15 inch Macbook Pros are running seventh generation Intel processors and are highly capable of taking care of any task the investigators would need to do. 
+If an investigator needs to run some analysis or search overnight they can use the virtual machine cluster at their will.
+\paragraph{}
+The employees can have additional hardware on their desk to make them more productive.
+They can utilize Thunderbolt 3 docks to connect to as many peripherals as they like as well as charge their laptop.
+These docks could connect to multiple high resolution screens. As well as a keyboard and mouse, a backup hard drive, and anything they find useful.
+
+ 
 \subsection{Tools for Employees} 
+\paragraph{}
+Employees would have several tools available to them to use in their investigations.
+These devices would be stored in the cabinets at the workspace next to the evidence locker.
+\begin{itemize}
+\item
+Various Hard Drive Write Blockers for all the different hard drive connectors
+\subitem
+Write blockers would be needed for all of the storage devices that an investigator would encounter.
+This would be all kind of hard drive formats; IDE, SCSI, SATA, USB, eSATA, SD Cards of all sizes, etc.
+\item
+Tools for mobile forensics
+\subitem
+In order to gather information about mobile phones. For example, a SIM card reader would be useful to have.
+\item 
+Harvest Drives
+\subitem 
+A constant supply of clean hard drives for use by investigators to acquire and clone data from hard drives involved in a case.
+Various storage sizes would be available to clone any specific sized hard drive.
+\item 
+Hard Drive cloning devices
+\subitem 
+Hardware specifically made to clone hard drives will speed up the process of cloning a hard drive and poses less risk to accidentally changing or losing data.
+\item 
+Reference Materials
+\subitem 
+A handy location in a cabinet or bookshelf for reference material like text books, binders of academic papers and articles, training material, etc.
+These reference materials would be useful for investigators to remember how to perform specific tasks they need to do.
+\item 
+Computer Toolkit
+\subitem 
+The Computer Toolkit would include all the tools needed to dissect a computer or other digital devices.
+The toolkit would include things like various screwdrivers with different heads to open up security screws. 
+Small screwdrivers for getting into laptops and other small digital appliances. 
+Pliers, wire cutters, wire strippers and other tools would be included for working with cables. 
+Wrenches and nut drivers would be essential for opening desktop computer cases and larger digital appliances. 
+\item 
+Flashlights
+\subitem 
+Flashlights are useful for areas with bad lighting where it is hard to see without bringing your own light. 
+\item 
+Digital Cameras
+\subitem
+Digital Cameras are an essential part of any criminal investigation.
+They are used to document crime scenes, exactly how they are before the investigation starts. 
+The cameras will be immensely useful for documenting the location of all the digital devices that the forensic laboratory is going to seize. 
+Additionally the cameras are helpful for recording exactly how devices are configured, any drives that are in computers, how the hardware in the computer is installed, any flash drives that are installed to the computer.
+Photos of serial numbers or service numbers on devices make recording them quick and easy task for an investigator, allowing them to start their forensic work even faster. 
+Replacement batteries would be stored with the cameras to ensure that there is always enough battery for the investigators to collect all the information necessary for the investigation.
+\item
+Evidence Bags
+\subitem 
+Evidence bags would be used for collecting any evidence that is taken from the crime scene.
+These bags would be antistatic in order to facilitate use with any digital devices with no worry of static electricity causing damage. 
+The bags would have the necessary labels on the outside in order to maintain chain of custody with proper documentation. 
+The bags would be optionally heat sealed for longer term storage to guarantee that they are tamper free. 
+\item 
+Evidence Labels and Tape
+\subitem 
+Labels for hard drive and tape for wrapping computers are used to ensure that no tampering with evidence occurs in storage. 
+The tape around computers does not allow access to the computer without obvious damage to the tape. 
+\end{itemize} 
+
 \subsection{Server Rack}
-\subsubsection{Power Supply} \paragraph{} The power supply to the server rack should be through an uninterruptible power supply (UPS) in order to ensure that the power supplied is clean and backed up by a battery.
+\subsubsection{Power Supply}
+\paragraph{}
+The power supply to the server rack should be through an uninterruptible power supply (UPS) in order to ensure that the power supplied is clean and backed up by a battery.
 The UPS should have enough capacity to run for the time it takes to start a diesel generator to take over as the power supply.
+The UPS can also be connected to the network for monitoring.  
 The diesel generator should have monthly testing, as well as the power supply failover operation.
 Each system in the rack should have two power supplies to help guarantee uptime.
 Each leg of the system should be plugged into a different rack mounted power supply to allow a power supply failure.
  
-\subsubsection{Networking} \paragraph{} The networking would be simple, one 48 port switch would be sufficient for the entire network.
+\subsubsection{Networking}
+\paragraph{}
+The networking would be simple, one 48 port switch would be sufficient for the entire network.
 And the connection to the ISP would be connected to a Router/Firewall box.
 The connection to the ISP should be fiber and have an uplink of at least 500Mbps to ensure that employees can connect remotely and download large files without saturating the link for a long time.
 A second connection to a different ISP should be considered, to be used as a failover in case of maintenance to the first ISP.
@@ -123,25 +208,50 @@ To improve security further on the ISP link a Network Detection and Response, su
 Each virtual machine would need three uplinks, one to the employee local area network, one to the Storage area network, and one link for VMWare.
 These networks will be isolated from each other using VLANs in order to enhance security.
 Other VLANs could be implemented to further isolate network devices like IP Cameras and smart door locks to prevent people from directly accessing and potentially compromising them.
-A wifi access point connected to the switch and 802.1x to authenticate to Active Directory to ensure only employee devices are connecting.
-Another vlan and separate wireless network, even on the same physical access point, with a password could also be provided to convenience the employees by providing wifi to their personal devices (e.g. personal cellphones).
-The convenience network would have very strict firewall rules and would not pass traffic to any of the other networks.
+A wifi access point connected to the switch and employees would authenticate to Active Directory to ensure only employee devices are connecting.
+This wifi would be most useful in the conference room while the employees are away from their workstations.
+Another VLAN and separate wireless network, even on the same physical access point, with a password could also be provided to convenience the employees by providing wifi to their personal devices (e.g. personal cellphones).
+The second network would have very strict firewall rules and would not pass traffic to any of the other networks.
+At the employees desks would be a wired connection for more reliable networking to the employees workstations. 
+From the server rack we can power small switches every few desks powered using power over ethernet.
+Would limit the amount of cables needed to run between the desks and the server rack to them connected to the network.
+The ethernet network can be secured using 802.1x so that no unauthorized computers could access the network. 
 
-\subsubsection{Virtual Machine Cluster} \paragraph{} The purpose of the virtual machine cluster is to provide investigators with multiple computers in the most convenient way possible.
+\subsubsection{Virtual Machine Cluster}
+\paragraph{}
+The purpose of the virtual machine cluster is to provide investigators with multiple computers in the most convenient way possible.
 Since investigators should have access to any operating system they could would need at any time instantly, it is expected that each investigator will have three to five virtual machines at any time.
 In addition to investigators the IT staff might also want to run some virtual machines for their convenience.
 This cluster will also provide infrastructure for internal and external services.
 Internal services would include Active Directory, samba/NFS/FTP sites, etc.
 Active Directory would be the central authentication for all the services.
-The cluster would be at least four Dell R630s or an equivalent from another company.
+Each server in the cluster would be dual socket motherboards to provide the high amount of compute power needed to run all the virtual machines.
+The servers would also be installed with high capacity error correcting memory to a lot of RAM can b allocated to virtual machines working with disk images.
 If the capacity allows it VMWare's high availability features can be leveraged to run multiple copies of the same virtual machine for critical infrastructure like the Windows Domain Controller in order to ensure that even if a physical host powers off unexpectedly the domain controller would continue to operate and employees are not interrupted.
-For cases where video processing is involved graphics cards can be installed on the virtual machine hosts and using PCI passthrough to attach graphics cards to the virtual machines to greatly enhance their video performance.
-This would allow investigators to comforatbly work from their laptop and still have the benefits of full size, powerful graphics cards.
+For cases where video processing is involved graphics cards can be installed on the virtual machine hosts and using PCI pass through to attach graphics cards to the virtual machines to greatly enhance their video performance.
+This would allow investigators to comfortably work from their laptop and still have the benefits of full size, powerful graphics cards.
 
-\subsubsection{Storage} \paragraph{} 
+\subsubsection{Storage}
+\paragraph{} 
+In order to be running many virtual machines the storage needs to be very performant Using all solid state hard drives in an array will achieve this.
+Using a separate VLAN for the storage to reach the virtual machine cluster with 10Gb ethernet would allow enough bandwidth to run as many virtual machines 
+With all the bandwidth on the many solid state drives the server would be able to perform enough IOPs to run all of the virtual machines at the same time.
+
+\subsubsection{Remote Storage}
+\paragraph{}
+Remote storage could be secured at a remote colocation facility in order to facilitate the use of off site backups for employee computers and evidence that is critical to a case. 
+Many dedicated storage systems have features built and this can be leveraged to easily send rolling backups to the remote location. 
+This can be done at a late at night and a pace that does not affect any of the few systems that are normally running that late. 
+Colocation facilities are often very secure and the rack can be locked in it's own cage to minimize access to only employees of the forensics laboratory. 
+The office can connect to this remote storage by site-to-site VPN in order to assure none of the data is readable will traveling over the internet. 
 
 
 \section{Software}
-Software required for the lab to act as a function Forensic Lab.
+\subsection{VMWare Fusion} 
+\paragraph{}
+VMWare fusion would allow employees to connect to different virtual machines easily.
+The software would allow seamless integration with the employees mouse and keyboard. 
+Features like shared clipboard and being able to drag and drop files between the host and guest.
+
 
 \end{document}
