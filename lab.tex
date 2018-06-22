@@ -82,6 +82,7 @@ These devices would be stored in the workspace next to the evidence locker.
 \paragraph{}
 The power supply to the server rack should be through an uninterruptible power supply (UPS) in order to ensure that the power supplied is clean and backed up by a battery.
 The UPS should have enough capacity to run for the time it takes to start a diesel generator to take over as the power supply.
+The UPS can also be connected to the network for monitoring.  
 The diesel generator should have monthly testing, as well as the power supply failover operation.
 Each system in the rack should have two power supplies to help guarantee uptime.
 Each leg of the system should be plugged into a different rack mounted power supply to allow a power supply failure.
@@ -101,10 +102,9 @@ This wifi would be most useful in the conference room while the employees are aw
 Another vlan and separate wireless network, even on the same physical access point, with a password could also be provided to convenience the employees by providing wifi to their personal devices (e.g. personal cellphones).
 The second network would have very strict firewall rules and would not pass traffic to any of the other networks.
 At the employees desks would be a wired connection for more reliable networking to the employees workstations. 
-Small switches every few desks powered using power over ethernet would limit the amount of cables needed to run all the way back to the server rack to be connected to the network.
+From the server rack we can power small switches every few desks powered using power over ethernet.
+Would limit the amount of cables needed to run between the desks and the server rack to them connected to the network.
 The ethernet network can be secured using 802.1x so that no unauthorized computers could access the network. 
-
-
 
 \subsubsection{Virtual Machine Cluster}
 \paragraph{}
