@@ -153,8 +153,7 @@ These docks could connect to multiple high resolution screens. As well as a keyb
 Employees would have several tools available to them to use in their investigations.
 These devices would be stored in the cabinets at the workspace next to the evidence locker.
 subsubsection
-\subsubsection{}
-Hard Drive Write Blockers
+\subsubsection{Hard Drive Write Blockers}
 \paragraph{}
 Write blockers would be needed for all of the storage devices that an investigator would encounter.
 This would be all kind of hard drive formats; IDE, SCSI, SATA, USB, eSATA, SD Cards of all sizes, etc.
@@ -165,7 +164,7 @@ In order to gather information about mobile phones. For example, a SIM card read
 \paragraph{}
 A constant supply of clean hard drives for use by investigators to acquire and clone data from hard drives involved in a case.
 Various storage sizes would be available to clone any specific sized hard drive.
-\subsubsection{Hard Drive cloning devices}
+\subsubsection{Hard Drive Cloning Devices}
 \paragraph{}
 Hardware specifically made to clone hard drives will speed up the process of cloning a hard drive and poses less risk to accidentally changing or losing data.
 \subsubsection{Reference Materials}
@@ -173,7 +172,8 @@ Hardware specifically made to clone hard drives will speed up the process of clo
 A handy location in a cabinet or bookshelf for reference material like text books, binders of academic papers and articles, training material, etc.
 These reference materials would be useful for investigators to remember how to perform specific tasks they need to do.
 \subsubsection{Computer Toolkit}
-The Computer Toolkit would include all the tools needed to dissect a computer or other digital devices.
+\paragraph{}
+The computer toolkit would include all the tools needed to dissect a computer or other digital devices.
 The toolkit would include things like various screwdrivers with different heads to open up security screws. 
 Small screwdrivers for getting into laptops and other small digital appliances. 
 Pliers, wire cutters, wire strippers and other tools would be included for working with cables. 
@@ -231,8 +231,9 @@ At the employees desks would be a wired connection for more reliable networking 
 From the server rack we can power small switches every few desks powered using power over ethernet.
 Would limit the amount of cables needed to run between the desks and the server rack to them connected to the network.
 The ethernet network can be secured using 802.1x so that no unauthorized computers could access the network. 
+These switch would trunk two VLANs to each desk in order to connect the investigators laptops to the network as well running an IP phone at each desk in its own VLAN.
 
-\subsubsection{Virtual Machine Cluster}
+\subsubsection{Virtual Machine Host Cluster}
 \paragraph{}
 The purpose of the virtual machine cluster is to provide investigators with multiple computers in the most convenient way possible.
 Since investigators should have access to any operating system they could would need at any time instantly, it is expected that each investigator will have three to five virtual machines at any time.
@@ -256,6 +257,11 @@ This would allow investigators to comfortably work from their laptop and still h
 In order to be running many virtual machines the storage needs to be very performant Using all solid state hard drives in an array will achieve this.
 Using a separate VLAN for the storage to reach the virtual machine cluster with 10Gb ethernet would allow enough bandwidth to run as many virtual machines 
 With all the bandwidth on the many solid state drives the server would be able to perform enough IOPs to run all of the virtual machines at the same time.
+\paragraph{}
+Having performant storage is important as the investigators work with disk images a lot and will constantly be uploading, examining, searching, etc.  large amounts of data throughout their day and work.
+The large array of solid state drive can provide quick read times and massive bandwidth to anything on the network.
+Using network storage makes it convenient for employees since they would not have to worry about storage on their laptops or carry around extra hard drives which could get broken or lost.
+
 
 \subsubsection{Remote Network Storage}
 \paragraph{}
