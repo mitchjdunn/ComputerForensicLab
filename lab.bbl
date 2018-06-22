@@ -1,0 +1,77 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{hayes}{book}{}
+      \name{author}{1}{}{%
+        {{hash=bd9a078367ee663a90ac58279d8ba022}{%
+           family={Hayes},
+           familyi={H\bibinitperiod},
+           given={Darren\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Idianapolis, Indiana}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{bd9a078367ee663a90ac58279d8ba022}
+      \strng{fullhash}{bd9a078367ee663a90ac58279d8ba022}
+      \strng{authornamehash}{bd9a078367ee663a90ac58279d8ba022}
+      \strng{authorfullhash}{bd9a078367ee663a90ac58279d8ba022}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Practicle Guide to Computer Forensics Investigations}
+      \field{year}{2015}
+    \endentry
+    \entry{website}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a9a8cb2f64fbcd575e70b8b66ad5e515}{%
+           family={Champagne},
+           familyi={C\bibinitperiod},
+           given={Andr\x{fffd}\x{fffd}},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9a8cb2f64fbcd575e70b8b66ad5e515}
+      \strng{fullhash}{a9a8cb2f64fbcd575e70b8b66ad5e515}
+      \strng{authornamehash}{a9a8cb2f64fbcd575e70b8b66ad5e515}
+      \strng{authorfullhash}{a9a8cb2f64fbcd575e70b8b66ad5e515}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Evidence Technology Magazine}
+      \field{title}{Planning a Digital Forensic Lab}
+      \field{volume}{Spring 2016}
+      \field{year}{2016}
+      \field{pages}{16\bibrangedash 19}
+      \range{pages}{4}
+      \verb{url}
+      \verb http://www.evidencemagazine.com/index.php?option=com_content&task=view&id=2162&Itemid=49
+      \endverb
+    \endentry
+  \endsortlist
+  \missing{pdf}
+\endrefsection
+\endinput
+
