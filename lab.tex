@@ -189,7 +189,6 @@ The cameras will be immensely useful for documenting the location of all the dig
 Additionally the cameras are helpful for recording exactly how devices are configured, any drives that are in computers, how the hardware in the computer is installed, any flash drives that are installed to the computer.
 Photos of serial numbers or service numbers on devices make recording them quick and easy task for an investigator, allowing them to start their forensic work even faster. 
 Replacement batteries would be stored with the cameras to ensure that there is always enough battery for the investigators to collect all the information necessary for the investigation.
-subsubsection
 \subsubsection{Evidence Bags}
 \paragraph{}
 Evidence bags would be used for collecting any evidence that is taken from the crime scene.
@@ -213,18 +212,21 @@ Each leg of the system should be plugged into a different rack mounted power sup
  
 \subsubsection{Networking}
 \paragraph{}
-The networking would be simple, one 48 port switch would be sufficient for the entire network.
-And the connection to the ISP would be connected to a Router/Firewall box.
+The networking can be relatively simple, one large rack mounted switch would be sufficient for the entire network.
+The connection to the ISP would be connected to a Router/Firewall box.
 The connection to the ISP should be fiber and have an uplink of at least 500Mbps to ensure that employees can connect remotely and download large files without saturating the link for a long time.
+The fiber connection also provides better reliability.
 A second connection to a different ISP should be considered, to be used as a failover in case of maintenance to the first ISP.
 To improve security further on the ISP link a Network Detection and Response, such as RSA's NetWitness system would be running on the internal virtual machine cluster described below.
 Each virtual machine would need three uplinks, one to the employee local area network, one to the Storage area network, and one link for VMWare.
+\paragraph{}
 These networks will be isolated from each other using VLANs in order to enhance security.
 Other VLANs could be implemented to further isolate network devices like IP Cameras and smart door locks to prevent people from directly accessing and potentially compromising them.
 A wifi access point connected to the switch and employees would authenticate to Active Directory to ensure only employee devices are connecting.
 This wifi would be most useful in the conference room while the employees are away from their workstations.
 Another VLAN and separate wireless network, even on the same physical access point, with a password could also be provided to convenience the employees by providing wifi to their personal devices (e.g. personal cellphones).
-The second network would have very strict firewall rules and would not pass traffic to any of the other networks.
+The second wireless network would have very strict firewall rules and would not pass traffic to any of the other networks or even between devices on that network.
+\paragraph{}
 At the employees desks would be a wired connection for more reliable networking to the employees workstations. 
 From the server rack we can power small switches every few desks powered using power over ethernet.
 Would limit the amount of cables needed to run between the desks and the server rack to them connected to the network.
@@ -236,21 +238,26 @@ The purpose of the virtual machine cluster is to provide investigators with mult
 Since investigators should have access to any operating system they could would need at any time instantly, it is expected that each investigator will have three to five virtual machines at any time.
 In addition to investigators the IT staff might also want to run some virtual machines for their convenience.
 This cluster will also provide infrastructure for internal and external services.
+\paragraph{}
 Internal services would include Active Directory, samba/NFS/FTP sites, etc.
 Active Directory would be the central authentication for all the services.
+External services can be run inside the cluster as well while being safely separated from the rest of the network using VLANs and firewall rules to carefully allow traffic to certain machines.
+This can provide the web hosting for file sharing between the judges and lawyers when emailing files is not an option.
+\paragraph{}
 Each server in the cluster would be dual socket motherboards to provide the high amount of compute power needed to run all the virtual machines.
 The servers would also be installed with high capacity error correcting memory to a lot of RAM can b allocated to virtual machines working with disk images.
 If the capacity allows it VMWare's high availability features can be leveraged to run multiple copies of the same virtual machine for critical infrastructure like the Windows Domain Controller in order to ensure that even if a physical host powers off unexpectedly the domain controller would continue to operate and employees are not interrupted.
+\paragraph{}
 For cases where video processing is involved graphics cards can be installed on the virtual machine hosts and using PCI pass through to attach graphics cards to the virtual machines to greatly enhance their video performance.
 This would allow investigators to comfortably work from their laptop and still have the benefits of full size, powerful graphics cards.
 
-\subsubsection{Storage}
+\subsubsection{Network Attached Storage}
 \paragraph{} 
 In order to be running many virtual machines the storage needs to be very performant Using all solid state hard drives in an array will achieve this.
 Using a separate VLAN for the storage to reach the virtual machine cluster with 10Gb ethernet would allow enough bandwidth to run as many virtual machines 
 With all the bandwidth on the many solid state drives the server would be able to perform enough IOPs to run all of the virtual machines at the same time.
 
-\subsubsection{Remote Storage}
+\subsubsection{Remote Network Storage}
 \paragraph{}
 Remote storage could be secured at a remote colocation facility in order to facilitate the use of off site backups for employee computers and evidence that is critical to a case. 
 Many dedicated storage systems have features built and this can be leveraged to easily send rolling backups to the remote location. 
@@ -258,13 +265,16 @@ This can be done at a late at night and a pace that does not affect any of the f
 Colocation facilities are often very secure and the rack can be locked in it's own cage to minimize access to only employees of the forensics laboratory. 
 The office can connect to this remote storage by site-to-site VPN in order to assure none of the data is readable will traveling over the internet. 
 
-
 \section{Software}
+\paragraph{}
+A lot of the software that investigators will have access to their own suite of software provided by Kali Linux virtual machine. In addition to each employee having their own Kali Linux machine they will also have a Windows virtual machine to run any software requiring a Windows platform. Licenses for any software an investigator need will be managed by the IT staff. 
 \subsection{VMWare Fusion} 
 \paragraph{}
 VMWare fusion would allow employees to connect to different virtual machines easily.
 The software would allow seamless integration with the employees mouse and keyboard. 
 Features like shared clipboard and being able to drag and drop files between the host and guest.
+\subsection{Hard drive analysis tools}
+% something from the book 
 
 
 \end{document}
