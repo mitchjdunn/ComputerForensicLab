@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{margbib}
+\usepackage{caption}
 \usepackage{float}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage{pdfpages}
@@ -18,14 +19,9 @@
 \tableofcontents
 \newpage
 
-
-\section{Laboratory Design}
-\paragraph{} According to the NISTIR ``Forensic Science Laboratories: Handbook for Facility Planning, Design, Construction, and Relocation", a lab needs to be 700 to 1000 square feet per staff member \cite{pdf}.
-The square footage per staff member approaches the low number of that threshold as the number of employees increases because shared spaces, such as reception areas and server rooms don't need to grow at the same rate as the number of employees.
-With an estimated 8 staff members, this lab will require an approximate space of 6400 square feet to achieve the working goal of 800 service requests per year.
-
-\subsection{Staff Breakdown}
-\paragraph {Management - 1} 
+\section{Staffing}
+\subsection {Management} 
+\paragraph{Quantity - 1}
 \paragraph{} The laboratory manager is responsible for the well being of the lab.
 To actively excel at their job, the manager must have general knowledge of law, computer forensics, and business.
 This allows the manager to determine if the lab will be able to complete a service request based on current workload and legality. 
@@ -33,10 +29,12 @@ Most labs strive to have an ACLD/LAB accreditation status because it proves the 
 The manager must keep this in mind while creating policies for the rest of staff.
 In order to keep evidence forensically sound a proper chain of custody record has to be met and the evidence has to be properly handled while being investigated.
 These policies will not only improve the efficiency of the lab, but will also improve workplace ethics.
-\paragraph{Lawyer - 1} 
+\subsection{Lawyer } 
+\paragraph{Quantity - 1}
 \paragraph{} The Lawyer will act as a consult for the Computer Forensics staff to ensure all evidence is extracted legally and to verify the evidence is usable.
 
-\paragraph{IT Specialist - 2}
+\subsection{IT Specialist}
+\paragraph{Quantity - 2}
 \paragraph{}
 The IT Specialists will focus on the internal network and security of the lab.
 The IT Specialist should have 5 years experience as a system administrator, and be well versed in security.
@@ -44,14 +42,20 @@ The IT Specialists will be in charge of securing the hardware and evidence and m
 They should follow ACLD/LAB policies for lab and equipment security.
 The IT Specialist will also act as a system administrator managing users, limiting communication between VLANs, hosting evidence to be easily accessed by authorized personnel, and maintaining the network for the Laboratory.
 
-\paragraph{Computer Forensic Investigator - 5}
+\subsection{Computer Forensic Investigator}
+\paragraph{Quantity - 5}
 \paragraph{}
 A computer forensic investigator should have the skills needed to extract evidence from a device in a non damaging and legal way.
 It is important that the team of investigators are experienced in varying devices to enable the lab to accept a wide range of service requests.
 Evidence and other information can be from from any electronic device, ranging from laptop and computers to mobile phones and game consoles.
 All of these devices have their own operating system, meaning the investigator needs know how to work with multiple operating systems and software.
-\subsection{Laboratory Layout}
-\subsubsection{Office Space}
+
+\section{Laboratory Design}
+\paragraph{} According to the NISTIR ``Forensic Science Laboratories: Handbook for Facility Planning, Design, Construction, and Relocation", a lab needs to be 700 to 1000 square feet per staff member \cite{pdf}.
+The square footage per staff member approaches the low number of that threshold as the number of employees increases because shared spaces, such as reception areas and server rooms don't need to grow at the same rate as the number of employees.
+With an estimated 8 staff members, this lab will require an approximate space of 6400 square feet to achieve the working goal of 800 service requests per year.
+
+\subsection{Office Space}
 \paragraph{} The office space is designed to be the seating for the entire staff.  
 The desks have privacy walls so employees can work in peace, but the desks are in the same room to allow for cooperation.  
 Each desk will hold the staff members workstation and will also have a dedicated power supply to keep workflow alive and to prevent the loss of sensitive data in the rare case of a power outage. 
@@ -63,7 +67,7 @@ Under each desk is a small opening to a trough for cable management.
 This room contains the only entrance into the rest of the lab, meaning the main door needs to have some hefty security
 The door will be a double wide door made out of 18-gauge steel.
 The lock on the door will be controlled by an RFID badge and key code entry.
-\subsubsection{Conference Room}
+\subsection{Conference Room}
 \paragraph{}
 The conference room is a large room with a table and plenty of seating.  
 A forensic laboratory conducts a fair amount of business, mostly with the clients it takes in.
@@ -73,7 +77,7 @@ The network can only be accessed wirelessly while in the conference room.
 This limits the kind of work that can be done in the conference room.
 Because there are no sensitive devices or information in the conference room, there will not be a lock on the door into the conference room.
 
-\subsubsection{Server Room}
+\subsection{Server Room}
 \paragraph{}
 This room contains the most sensitive part of the network, meaning this room has the strongest security in the building.
 The door into the server room will have the same RFID badge and key code lock as the main door, but access will be limited to only those who are authorized.
@@ -111,27 +115,30 @@ Storage for lab equipment is stored in the same fashion, but partitioned in a se
 \begin{figure}[H]
    \centering
        \includegraphics[page=1,angle=180,width=.8\textwidth]{layout-thx-nick-millet.pdf}
- \caption{Layout of the Laboratory}
+ \caption{Layout of the Laboratory -- A quick sketch by Nick Millet}
  \label{fig:Layout}
 \end{figure}
 \begin{figure}[H]
-   \centering
+	\captionsetup{justification=centering, margin=2cm}
+	\centering
        \includegraphics{figures/doubledoor.jpg}
- \caption{Double Wide Security Doors}
+ 	\caption{Double Wide Security Doors https://static.grainger.com/rp/s/is/image/Grainger/1VML8\_AW99?$mdmain$}
  \label{fig:Double Doors}
 \end{figure}
 
 \begin{figure}[H]
    \centering
+   	\captionsetup{justification=centering}
        \includegraphics{figures/lock.jpg}
- \caption{RFID Reader and Key Code Lock}
+ \caption{RFID Reader and Key Code Lock https://www.gokeyless.com/product/trilogy-pdl3000-card-lock-access-system/}
  \label{fig:Lock}
 \end{figure}
 
 \begin{figure}[H]
    \centering
+   	\captionsetup{justification=centering}
        \includegraphics{figures/locker.jpg}
- \caption{Evidence and Storage Locker}
+ \caption{Evidence and Storage Locker https://www.fascosecurityproducts.com/includes/work/image\_cache/191095cb7793fc9629e3f9a1d98b2719.thumb.jpg}
  \label{fig:Locker}
 \end{figure}
 
@@ -306,7 +313,14 @@ The lab manager is responsible for setting up the standards for lab.
 This includes naming convention, documentation protocol, and storing procedures.
 It is the managers main goal to ensure the evidence attained is forensically sound.
 
-\medskip
+\subsection{Employee Training and Equipment}
+\paragraph{}
+Computer Forensics encapsulates a lot of advanced principles that require the right knowledge base and equipment to complete \cite{website}.
+It is the manager's job to hire knowledgable forensic investigators with enough knowledge to cover the responsibilites of the lab.
+Training the staff to keep them up to date on protocols, investigative techniques, and updated accreditation standards is a priority of the manager.
+
+
+\newpage
 \begin{thebibliography}{9}
 \bibitem{book}
 Authors,
