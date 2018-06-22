@@ -1,11 +1,12 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{graphicx}
-\usepackage{margbib}
 \usepackage{float}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage{pdfpages}
 \usepackage{setspace}
 \doublespace
+\usepackage[style=ieee]{biblatex}
+\addbibresource{lab.bib}
 
 \begin{document}
 
@@ -185,6 +186,7 @@ Flashlights are useful for areas with bad lighting where it is hard to see witho
 \subsubsection{Digital Cameras}
 \paragraph{}
 Digital Cameras are an essential part of any criminal investigation.
+\cite[p.~122]{hayes}
 They are used to document crime scenes, exactly how they are before the investigation starts. 
 The cameras will be immensely useful for documenting the location of all the digital devices that the forensic laboratory is going to seize. 
 Additionally the cameras are helpful for recording exactly how devices are configured, any drives that are in computers, how the hardware in the computer is installed, any flash drives that are installed to the computer.
@@ -288,7 +290,7 @@ Features like shared clipboard and being able to drag and drop files between the
 \paragraph{} 
 An ACLD/LAB accreditation can prove that a lab meets a certain set of standards.
 This can be used to gauge how well a lab can gather evidence, how well they handle the evidence and hardware, and can prove that the lab will be able to produce evidence that can be taken to court.
-Most labs strive to gain this accreditation but most do not meet the rigorous standards of the ACLD/LAB \cite{book}.
+Most labs strive to gain this accreditation but most do not meet the rigorous standards of the ACLD/LAB \cite{hayes}.
 The reason most labs fail to gain the accreditation is because they are attempting to update an existing lab.
 It can be a costly endeavor to try to upgrade lab equipment, retrain staff, and install the proper security measures.
 Keeping the ACLD/LAB standards in mind while designing the lab is the best way to have a lab that is accredited and the best way to keep it accredited.
@@ -305,26 +307,13 @@ Even the network itself has been designed with intense security principles in mi
 
 \subsection{Evidence Handling}
 \paragraph{}
-In order to keep evidence forensically sound, certain policies must be followed \cite{book}. 
+In order to keep evidence forensically sound, certain policies must be followed \cite{hayes}. 
 Proper chain of custody must be meet, listing who had the evidence when and for how long.  
 It is an arduous process, but is ultimately the best way to determine that evidence is real and interpreted correctly.
 The lab manager is responsible for setting up the standards for lab.
 This includes naming convention, documentation protocol, and storing procedures.
 It is the managers main goal to ensure the evidence attained is forensically sound.
 
-\medskip
-\begin{thebibliography}{9}
-\bibitem{book}
-Authors,
-\textit{book name}
-copy right information,
-\bibitem{website}
-Andre Champagne: Planning a Digital Forensics Lab,
-http://www.evidencemagazine.com/index.php?option=com\_content\&task=view\&id=2162\&Itemid=49
-\bibitem{pdf}
-authors
-\textit{Forensic Science Laboratories: Handbook for Facility Planning, Design, Construction, and Relocation}
-
-United States Department of Commerce, June 2013
-\end{thebibliography}
+\newpage
+\printbibliography
 \end{document}
