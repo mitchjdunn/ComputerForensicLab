@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{margbib}
 \usepackage{float}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage{pdfpages}
@@ -18,7 +19,7 @@
 \newpage
 
 \section{Laboratory Design}
-\paragraph{} According to the NISTIR ``Forensic Science Laboratories: Handbook for Facility Planning, Design, Construction, and Relocation", a lab needs to be 700 to 1000 square feet per staff member.
+\paragraph{} According to the NISTIR ``Forensic Science Laboratories: Handbook for Facility Planning, Design, Construction, and Relocation", a lab needs to be 700 to 1000 square feet per staff member \cite{pdf}.
 The square footage per staff member approaches the low number of that threshold as the number of employees increases because shared spaces, such as reception areas and server rooms don't need to grow at the same rate as the number of employees.
 With an estimated 8 staff members, this lab will require an approximate space of 6400 square feet to achieve the working goal of 800 service requests per year.
 
@@ -283,4 +284,47 @@ Features like shared clipboard and being able to drag and drop files between the
 % something from the book 
 
 
+\section{Accreditation}
+\paragraph{} 
+An ACLD/LAB accreditation can prove that a lab meets a certain set of standards.
+This can be used to gauge how well a lab can gather evidence, how well they handle the evidence and hardware, and can prove that the lab will be able to produce evidence that can be taken to court.
+Most labs strive to gain this accreditation but most do not meet the rigorous standards of the ACLD/LAB \cite{book}.
+The reason most labs fail to gain the accreditation is because they are attempting to update an existing lab.
+It can be a costly endeavor to try to upgrade lab equipment, retrain staff, and install the proper security measures.
+Keeping the ACLD/LAB standards in mind while designing the lab is the best way to have a lab that is accredited and the best way to keep it accredited.
+\subsection{Lab Security}
+\paragraph{}
+A lab's security is important because it deals with sensitive information, the kind of information people go through many lengths to try to hide.  
+A lab can be secured by locking away important hardware, having secure locks, and video surveillance where necessary \cite{website}.
+In this lab, there are extra layers of security.
+Evidence is locked in a locker, in a cage, and through an RFID and key coded door.
+The server rack which holds all of the network hardware is locked with a combination lock and is locked behind 2 of the RFID locks.
+Only staff can enter the office, and can only enter more restricted parts of the lab if authorized.
+There are CCTV cameras recording all the restricted areas and a log is kept of each RFID badge used to enter.
+Even the network itself has been designed with intense security principles in mind.
+
+\subsection{Evidence Handling}
+\paragraph{}
+In order to keep evidence forensically sound, certain policies must be followed \cite{book}. 
+Proper chain of custody must be meet, listing who had the evidence when and for how long.  
+It is an arduous process, but is ultimately the best way to determine that evidence is real and interpreted correctly.
+The lab manager is responsible for setting up the standards for lab.
+This includes naming convention, documentation protocol, and storing procedures.
+It is the managers main goal to ensure the evidence attained is forensically sound.
+
+\medskip
+\begin{thebibliography}{9}
+\bibitem{book}
+Authors,
+\textit{book name}
+copy right information,
+\bibitem{website}
+Andre Champagne: Planning a Digital Forensics Lab,
+http://www.evidencemagazine.com/index.php?option=com\_content\&task=view\&id=2162\&Itemid=49
+\bibitem{pdf}
+authors
+\textit{Forensic Science Laboratories: Handbook for Facility Planning, Design, Construction, and Relocation}
+
+United States Department of Commerce, June 2013
+\end{thebibliography}
 \end{document}
