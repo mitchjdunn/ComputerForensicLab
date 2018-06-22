@@ -19,6 +19,31 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
+    \entry{hayes}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c078db7689b4520168aaef0856092f98}{%
+           family={Hayes},
+           familyi={H\bibinitperiod},
+           given={Darren},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Idianapolis, Indiana}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{c078db7689b4520168aaef0856092f98}
+      \strng{fullhash}{c078db7689b4520168aaef0856092f98}
+      \strng{authornamehash}{c078db7689b4520168aaef0856092f98}
+      \strng{authorfullhash}{c078db7689b4520168aaef0856092f98}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Practicle Guide to Computer Forensics Investigations}
+      \field{year}{2015}
+    \endentry
     \entry{pdf}{book}{}
       \name{author}{4}{}{%
         {{hash=0b1da0e7bdc451af8978b8742df4681c}{%
@@ -46,37 +71,33 @@
       \strng{fullhash}{6bf5d2d3c3634dbe6c8dc74feb227642}
       \strng{authornamehash}{f7a6bc474b630a749a15eaeda990602a}
       \strng{authorfullhash}{6bf5d2d3c3634dbe6c8dc74feb227642}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Forensic Science Laboratories: Handbook for Facility Planning, Design, constructoin, and Relocation}
       \field{year}{2013}
     \endentry
-    \entry{hayes}{book}{}
-      \name{author}{1}{}{%
-        {{hash=bd9a078367ee663a90ac58279d8ba022}{%
-           family={Hayes},
-           familyi={H\bibinitperiod},
-           given={Darren\bibnamedelima R.},
-           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Idianapolis, Indiana}%
-      }
-      \list{publisher}{1}{%
-        {Pearson}%
-      }
-      \strng{namehash}{bd9a078367ee663a90ac58279d8ba022}
-      \strng{fullhash}{bd9a078367ee663a90ac58279d8ba022}
-      \strng{authornamehash}{bd9a078367ee663a90ac58279d8ba022}
-      \strng{authorfullhash}{bd9a078367ee663a90ac58279d8ba022}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{A Practicle Guide to Computer Forensics Investigations}
-      \field{year}{2015}
+    \entry{imageOne}{image}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \verb{url}
+      \verb https://static.grainger.com/rp/s/is/image/Grainger/1VML8_AW99
+      \endverb
+    \endentry
+    \entry{imageTwo}{image}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \verb{url}
+      \verb https://www.gokeyless.com/product/trilogy-pdl3000-card-lock-access-system/
+      \endverb
+    \endentry
+    \entry{imageThree}{image}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \verb{url}
+      \verb https://www.fascosecurityproducts.com/includes/work/image_cache/191095cb7793fc9629e3f9a1d98b2719.thumb.jpg
+      \endverb
     \endentry
     \entry{website}{article}{}
       \name{author}{1}{}{%
@@ -90,8 +111,8 @@
       \strng{fullhash}{a9a8cb2f64fbcd575e70b8b66ad5e515}
       \strng{authornamehash}{a9a8cb2f64fbcd575e70b8b66ad5e515}
       \strng{authorfullhash}{a9a8cb2f64fbcd575e70b8b66ad5e515}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Evidence Technology Magazine}
