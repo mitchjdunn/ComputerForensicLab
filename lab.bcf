@@ -2119,11 +2119,13 @@
     <bcf:datasource type="file" datatype="bibtex">lab.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">pdf</bcf:citekey>
+    <bcf:citekey order="1">hayes</bcf:citekey>
     <bcf:citekey order="2">hayes</bcf:citekey>
-    <bcf:citekey order="3">hayes</bcf:citekey>
-    <bcf:citekey order="4">website</bcf:citekey>
+    <bcf:citekey order="3">pdf</bcf:citekey>
+    <bcf:citekey order="4">hayes</bcf:citekey>
     <bcf:citekey order="5">hayes</bcf:citekey>
+    <bcf:citekey order="6">website</bcf:citekey>
+    <bcf:citekey order="7">hayes</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -19,6 +19,40 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
+    \entry{pdf}{book}{}
+      \name{author}{4}{}{%
+        {{hash=0b1da0e7bdc451af8978b8742df4681c}{%
+           family={Aguilar},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8c807ff8b4787db7e27a8d9da6b30254}{%
+           family={Barnes},
+           familyi={B\bibinitperiod},
+           given={Tome},
+           giveni={T\bibinitperiod}}}%
+        {{hash=50bf320b5b4067f8025b21a85680ed5f}{%
+           family={Browne},
+           familyi={B\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c3b2ca4e1cd26593d202b777d068da34}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7a6bc474b630a749a15eaeda990602a}
+      \strng{fullhash}{6bf5d2d3c3634dbe6c8dc74feb227642}
+      \strng{authornamehash}{f7a6bc474b630a749a15eaeda990602a}
+      \strng{authorfullhash}{6bf5d2d3c3634dbe6c8dc74feb227642}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Forensic Science Laboratories: Handbook for Facility Planning, Design, constructoin, and Relocation}
+      \field{year}{2013}
+    \endentry
     \entry{hayes}{book}{}
       \name{author}{1}{}{%
         {{hash=bd9a078367ee663a90ac58279d8ba022}{%
@@ -67,11 +101,10 @@
       \field{pages}{16\bibrangedash 19}
       \range{pages}{4}
       \verb{url}
-      \verb http://www.evidencemagazine.com/index.php?option=com_content&task=view&id=2162&Itemid=49
+      \verb http://www.evidencemagazine.com/index.php?option=com_content%5C&task=view%5C&id=2162%5C&Itemid=49
       \endverb
     \endentry
   \endsortlist
-  \missing{pdf}
 \endrefsection
 \endinput
 
