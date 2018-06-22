@@ -66,7 +66,7 @@ Each desk will hold the staff members workstation and will also have a dedicated
 
 An IP phone will complete each desk so staff members can conduct business with people outside of the office.
 Under each desk is a small opening to a trough for cable management.
-This room contains the only entrance into the rest of the lab, meaning the main door needs to have some hefty security
+This room contains the only entrance into the rest of the lab, meaning the main door needs to have some robust security
 The door will be a double wide door made out of 18-gauge steel.
 The lock on the door will be controlled by an RFID badge and key code entry.
 \subsection{Conference Room}
@@ -87,9 +87,11 @@ The server is a critical part of the lab, as it is controls all of the data traf
 To ensure the safety of the server, this room has its own air supply unit and control to keep it at a temperature and humidity level that is safe for the hardware.
 The room will have antistatic epoxy flooring, and the handlers are instructed to wear antistatic wristbands connected to the case of the server rack to protect the internals from electrical damage.
 To keep the server runner and have a redundant power supply, there will two mounted within the server rack.
-To connect the rest of the lab to the network, there are a couple troughs running below the floor.
+\paragraph{}
+To connect the rest of the lab to the network, there are subfloor troughs running below the floor.
 This trough is designed with security in mind.
-There is no access to the trough from outside of the building, and is far too small to allow access into the server room.
+There is no access to the trough from outside of the building.
+It is too small, only about 8 inches tall, to allow access into the server room.
 
 \subsection{Workbench}
 \paragraph{}
@@ -97,8 +99,9 @@ Forensic investigators often need to disassemble hardware and copy disk drives t
 The workbench will act as an area for the investigators to work on the physical devices.
 In the area around the workbench there are locked cabinets to house the tools and equipment needed to work on varying devices.
 The investigators have an open desk to place and disassemble the hardware, documenting each step of the way.
-A trough underneath the bench supplies a couple connections to the network to enable the investigator to work on their workstation while at the bench.
+A trough underneath the bench supplies a connections to the network to enable the investigator to work on their workstation while at the bench.
 Lab policy enforces the investigators properly document the process they take to keep chain of custody intact, store the evidence in a secure place, and to return hardware in the same status is was received.
+\paragraph{}
 The prevent damage done to hardware, the workbench is covered with antistatic mats, and only properly trained investigators will work on the hardware.
 The workbench is locked in a room with the evidence locker, storage locker, and contains the only entrance to the server room.
 The workbench is locked with an RFID badge and key code lock that can limit access to those who are authorized.
@@ -198,6 +201,7 @@ Digital Cameras are an essential part of any criminal investigation.
 \cite[p.~122]{hayes}
 They are used to document crime scenes, exactly how they are before the investigation starts. 
 The cameras will be immensely useful for documenting the location of all the digital devices that the forensic laboratory is going to seize. 
+\paragraph{}
 Additionally the cameras are helpful for recording exactly how devices are configured, any drives that are in computers, how the hardware in the computer is installed, any flash drives that are installed to the computer.
 Photos of serial numbers or service numbers on devices make recording them quick and easy task for an investigator, allowing them to start their forensic work even faster. 
 Replacement batteries would be stored with the cameras to ensure that there is always enough battery for the investigators to collect all the information necessary for the investigation.
@@ -280,6 +284,7 @@ Using network storage makes it convenient for employees since they would not hav
 Remote storage could be secured at a remote colocation facility in order to facilitate the use of off site backups for employee computers and evidence that is critical to a case. 
 Many dedicated storage systems have features built and this can be leveraged to easily send rolling backups to the remote location. 
 This can be done at a late at night and a pace that does not affect any of the few systems that are normally running that late. 
+\paragraph{}
 Colocation facilities are often very secure and the rack can be locked in it's own cage to minimize access to only employees of the forensics laboratory. 
 The office can connect to this remote storage by site-to-site VPN in order to assure none of the data is readable will traveling over the internet. 
 
@@ -292,14 +297,22 @@ VMWare fusion would allow employees to connect to different virtual machines eas
 The software would allow seamless integration with the employees mouse and keyboard. 
 Features like shared clipboard and being able to drag and drop files between the host and guest.
 \subsection{Hard drive analysis tools}
-% something from the book 
-
+\paragraph{}
+The laboratory would provide a suite of hard drive analysis tools in order to help investigators examine any kind of drive they encounter. Some of the software that investigators would need to examine hard drives are listed below:\cite[p.~132]{hayes}
+\begin{itemize}
+\item ILook
+\item DriveSpy
+\item X-Ways Forensics
+\item WinHex
+\item FTK
+\end{itemize}
 
 \section{Accreditation}
 \paragraph{} 
 An ACLD/LAB accreditation can prove that a lab meets a certain set of standards.
 This can be used to gauge how well a lab can gather evidence, how well they handle the evidence and hardware, and can prove that the lab will be able to produce evidence that can be taken to court.
 Most labs strive to gain this accreditation but most do not meet the rigorous standards of the ACLD/LAB \cite{hayes}.
+\paragraph{}
 The reason most labs fail to gain the accreditation is because they are attempting to update an existing lab.
 It can be a costly endeavor to try to upgrade lab equipment, retrain staff, and install the proper security measures.
 Keeping the ACLD/LAB standards in mind while designing the lab is the best way to have a lab that is accredited and the best way to keep it accredited.
@@ -307,6 +320,7 @@ Keeping the ACLD/LAB standards in mind while designing the lab is the best way t
 \paragraph{}
 A lab's security is important because it deals with sensitive information, the kind of information people go through many lengths to try to hide.  
 A lab can be secured by locking away important hardware, having secure locks, and video surveillance where necessary \cite{website}.
+\paragraph{}
 In this lab, there are extra layers of security.
 Evidence is locked in a locker, in a cage, and through an RFID and key coded door.
 The server rack which holds all of the network hardware is locked with a combination lock and is locked behind 2 of the RFID locks.
@@ -319,10 +333,12 @@ Even the network itself has been designed with intense security principles in mi
 In order to keep evidence forensically sound, certain policies must be followed \cite{hayes}. 
 Proper chain of custody must be meet, listing who had the evidence when and for how long.  
 It is an arduous process, but is ultimately the best way to determine that evidence is real and interpreted correctly.
+\paragraph{}
 The lab manager is responsible for setting up the standards for lab.
 This includes naming convention, documentation protocol, and storing procedures.
 It is the managers main goal to ensure the evidence attained is forensically sound.
 
 \newpage
 \printbibliography
+
 \end{document}
